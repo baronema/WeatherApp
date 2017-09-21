@@ -1,0 +1,69 @@
+<html>
+  <body>
+    <div class="container main-container">
+      <div class="flex-row flex-spread-apart" id="top-input">
+        <div id="location" class="">
+          <h3><i class="fa fa-map-marker" aria-hidden="true"></i><span></span></h3>
+        </div>
+        <div id="temp-unit" class="" title="Toggle units">
+          <a id="units" href="#">
+            <span id="celcius" class="">°C</span> / <span id="fahrenheit" class="">°F</span>
+          </a>
+        </div>
+      </div>
+			
+      <div class="container-fluid mid">
+        <div class="text-center">
+        <img id="weather-icon" src=""></img>
+        </div>
+        <div class="text-center" id="weather-desc"></div>
+      </div>
+      
+      <div class="flex-row flex-spread-apart" id="bottom-unit">
+        <div id="temp">
+          <div id="temp-value" title="Current Temperature"><i class="fa fa-thermometer-three-quarters"></i><span>20</span>°</div>
+        </div>
+        <div id="details" class="">
+          <div class="row justify-content-end" title="Current wind speed">
+            <i class="fa fa-flag col-2" aria-hidden="true"></i>
+            <div class="col-3" id="wind" >0.00</div>
+            <small class="col-4" id="wind-unit">mph</small>
+          </div>
+          <div class="row justify-content-end" title="Today's expected Hi-Temp">
+            <i class="fa fa-thermometer-full col-2" aria-hidden="true"></i>
+            <div class="col-3" id="hi_temp">0.00</div>
+            <small class="col-4 unit">°F</small>
+          </div>
+          <div class="row justify-content-end" title="Today's expected Low-Temp">
+            <i class="fa fa-thermometer-1 col-2" aria-hidden="true"></i>
+            <div class="col-3" id="low_temp">0.00</div>
+            <small class="col-4 unit">°F</small>
+          </div>
+          <div class="row justify-content-end" title="Cloudiness">
+            <i class="fa fa-cloud col-2" aria-hidden="true"></i>
+            <div class="col-3" id="clouds">0.00 </div>
+            <small class="col-4">%</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container loc-container container-fluid">
+      <div id="loc"><strong>Current location:</strong></div>
+      <div id="currentLoc"></div>
+    </div>
+    <div class="container search-container">
+      <input type="text" id="zip" placeholder="Search by Zip"/>
+      <a class="btn btn-info" id="search" href="#">Get Weather</a>
+    </div>
+ 
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+  </script>
+  
+ </body>  
+</html>

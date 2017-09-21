@@ -1,0 +1,163 @@
+html {
+	background-image: url('https://cdn.pixabay.com/photo/2015/04/07/15/04/weather-vane-711082_1280.jpg');
+  background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body {
+	background-color: transparent !important;
+  font-family: 'Reem Kufi', sans-serif;
+	color: white;
+}
+
+.mid{
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+}
+
+.fa {
+  padding-right: 15px;
+}
+
+.main-container {
+  width: 70%;
+  max-width: 860px;
+  margin: 50px auto ;
+  border-radius: 8px;
+  background-color: rgba(35, 35, 35, 0.6);
+}
+
+.loc-container {
+  width: 70%;
+  max-width: 440px;
+  margin: 30px auto;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(35, 35, 35, 0.6);
+}
+
+.search-container {
+  width: 50%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 10px 5px 10px 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(35, 35, 35, 0.6);
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-spread-apart {
+	justify-content: space-between;
+}
+
+.row {
+  text-align: right;
+}
+
+#zip {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 25px 0 0;
+}
+
+#weather-icon {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#weather-desc {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+#top-input {
+  padding: 25px 10px 10px;
+}
+
+#bottom-unit {
+  padding: 10px 10px 10px;
+  cursor: pointer;
+}
+
+#location,
+#temp-unit {
+	margin: auto 0;
+}
+
+#location h3 {
+	margin: 0;
+	text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+#temp-unit a {
+	text-decoration: none;
+  color: #ffe659;
+  font-size: 1.4em;
+}
+
+#temp-unit a span.active {
+	font-size: 120%;
+	font-weight:bold;
+}
+
+#temp {
+  font-size: 3.5em;
+}
+
+#loc {
+  color: white;
+  margin-right: 10px;
+  float: left;
+}
+
+/* ----------- Make Mobile Friendly ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    
+    .main-container {
+      width: 90%;
+      margin: 15px auto 0;
+      border-radius: 8px;
+      background-color: rgba(35, 35, 35, 0.6);
+    }
+
+    .loc-container {
+      width: 90%;
+      margin: 15px auto 0;
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: rgba(35, 35, 35, 0.6);
+    }
+    .search-container {
+      width: 90%;
+      margin: 15px auto 0 auto;
+      padding: 10px 5px 10px 5px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 8px;
+      background-color: rgba(35, 35, 35, 0.6);
+      }
+}
