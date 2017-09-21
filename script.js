@@ -37,7 +37,7 @@ $(document).ready(function() {
     $.getJSON(api, function(data) {
       $('#currentLoc').text(data.results[1].formatted_address);
     }).fail(function() { 
-      $("#currentLoc").text("**Google Maps API failed to retrieve address**"; 
+      $("#currentLoc").text("**Google Maps API failed to retrieve address**"); 
     });
   } // end getLocation()
   
