@@ -32,7 +32,7 @@ $(document).ready(function() {
   // ================================================================
   function getLocation(lat, long){
     
-    var api = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat +',' + long + '&sensor=false';
+    var api = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat +',' + long + '&key=AIzaSyBkrMuBpNy_ViqTeKPfs78o_iMXGFCJ9io';
     
     $.getJSON(api, function(data) {
       $('#currentLoc').text(data.results[1].formatted_address);
