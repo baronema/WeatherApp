@@ -73,22 +73,22 @@ $(document).ready(function() {
     var img, url;
     switch(data){
       case 2:
-        img = "https://cdn.pixabay.com/photo/2017/08/03/08/51/zipper-2575090_1280.jpg";
+        img = "images/thunderstorm.jpg";
         break;
       case 3:
-        img = "https://cdn.pixabay.com/photo/2014/05/26/14/45/rain-354617_1280.jpg";
+        img = "images/drizzle.jpg";
         break;
       case 5:
-        img = "https://cdn.pixabay.com/photo/2014/04/05/11/39/rain-316579_1280.jpg";
+        img = "images/rain.jpg";
         break;
       case 6:
-        img = "https://cdn.pixabay.com/photo/2016/09/14/03/18/snow-1668695_1280.jpg";
+        img = "images/snow.jpg";
         break;
       case 8:
-        img = "https://cdn.pixabay.com/photo/2017/07/18/17/01/autumn-2516376_1280.jpg";
+        img = "images/clear.jpg";
         break;
       default:
-        img ="https://cdn.pixabay.com/photo/2015/04/07/15/04/weather-vane-711082_1280.jpg";
+        img ="images/default.jpg";
         break;
     }
     url = "url(" + img + ")";
