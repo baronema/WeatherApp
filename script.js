@@ -103,27 +103,27 @@ $(document).ready(function() {
     var temp = $('#temp-value span').text(),
         hi = $('#hi_temp').text(),
         low = $('#low_temp').text(),
-        speed = $('#wind').text();
+        speed = $('#wind').text(),
+        choice = event.target.id,
+        active = $('#' + choice).hasClass('active');
     
-    $('#celcius, #fahrenheit').removeClass('active');
-    
-    if(event.target.id == "celcius"){
+    if(choice == "celcius" && !(active)){
       $('#temp-value span').text(convertFahToCel(temp));
       $('#hi_temp').text(convertFahToCel(hi));
       $('#low_temp').text(convertFahToCel(low));
       $('#wind').text(convert_MPH_MS(speed));
       $('#wind-unit').text("m/s");
       $('.unit').text("°C");
-      $('#celcius').addClass('active');
-    } else {
+    } else if(choice == "fahrenheit" && !(active)){
       $('#temp-value span').text(convertCelToFah(temp));
       $('#hi_temp').text(convertCelToFah(hi));
       $('#low_temp').text(convertCelToFah(low));
       $('#wind').text(convert_MS_MPH(speed));
-      $('#fahrenheit').addClass('active');
       $('#wind-unit').text("mph");
       $('.unit').text("°F");
     }
+    $('#celcius, #fahrenheit').removeClass('active');
+    $('#' + choice).addClass('active');
   }); // end temp units click listener
 
   //================================================================
